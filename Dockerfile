@@ -29,8 +29,8 @@ COPY --from=build /usr/src/app/dist ./dist
 # Install only production dependencies
 RUN npm install --production
 
-# Make port 8080 available to the world outside this container
-EXPOSE 8080
+# Make port 80 available
+EXPOSE 80
 
 # Define environment variable
 ENV NODE_ENV=production
